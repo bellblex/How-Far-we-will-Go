@@ -1,0 +1,15 @@
+Name: Pixel heart
+Price: Eligible
+
+Original  size: 48x48
+Resized size: No resized
+Total Frames: 68
+
+Available for use as:
+	Full .ase file
+	Full prite sheet
+	.png images of each frame
+
+If these Assets are used, credit must be given to the author:
+https://leon-zkish.weebly.com/
+© L. León.
