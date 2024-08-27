@@ -85,20 +85,8 @@ scroll_speed = 3
 surface_text = test_font.render('GoncaDu', False, 'Pink')
 text_rect = surface_text.get_rect(center=(screen_width / 2, screen_height / 2))
 
-# Player's starting position, animation index, and direction
-girl_x_pos = screen_width / 2 - 50  
-girl_y_pos = screen_height - 100  
-girl_index = 0
-moving_right = True  
-is_jumping = False
-jump_velocity = 0
+# Player's starting position, animation index, and 
 
-
-boy_x_pos = screen_width / 2 - 50 
-boy_y_pos = screen_height - 100  
-boy_index = 0
-boy_moving_right = True  
-boy_is_jumping = False
 boy_jump_velocity = 0
 
 
