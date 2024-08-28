@@ -35,8 +35,8 @@ def move_and_render_character(player, x_pos, y_pos, surface_right, surface_left,
         y_pos += jump_velocity  
         jump_velocity += 1 
         if player == 'player2':
-            if y_pos >= screen_height - ground_height - 135:
-                y_pos = screen_height - ground_height - 135  
+            if y_pos >= screen_height - ground_height - 120:
+                y_pos = screen_height - ground_height - 120  
                 is_jumping = False 
         else:
             if y_pos >= screen_height - ground_height - 100: 

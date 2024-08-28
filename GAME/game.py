@@ -122,7 +122,7 @@ def game_loop(screen, screen_width, screen_height, test_font):
 
     # Initialize boy character variables
     boy_x_pos = screen_width - 200
-    boy_y_pos = screen_height - ground_height - 135
+    boy_y_pos = screen_height - ground_height - 120
     boy_index = 0
     boy_moving_right = True
     boy_is_jumping = False
@@ -130,9 +130,9 @@ def game_loop(screen, screen_width, screen_height, test_font):
 
 
     player1_width = 100  
-    player1_height = 100  1
+    player1_height = 100  
     player2_width = 135  
-    player2_height = 135  2
+    player2_height = 135 
 
     girl_ability_used = False
     boy_ability_used = False
