@@ -1,6 +1,6 @@
 import pygame
 from sys import exit
-from game import game_loop  # Import the game loop function
+from game import game_loop  
 
 # Initialize Pygame
 pygame.init()
@@ -64,10 +64,8 @@ def main_menu():
                     selected_option = (selected_option - 1) % len(menu_options)
                 if event.key == pygame.K_RETURN:
                     if selected_option == 0:
-                        # Pass the necessary parameters to game_loop
                         game_loop(screen, screen_width, screen_height, test_font)
                     elif selected_option == 1:
-                        # Placeholder for Options, implement as needed
                         draw_text("Options - Not Implemented", small_font, WHITE, screen, screen_width / 2, screen_height / 2 + 200)
                         pygame.display.update()
                         pygame.time.wait(2000)
@@ -84,10 +82,8 @@ def main_menu():
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if mouse_click[0]:
                     if selected_option == 0:
-                        # Pass the necessary parameters to game_loop
                         game_loop(screen, screen_width, screen_height, test_font)
                     elif selected_option == 1:
-                        # Placeholder for Options, implement as needed
                         draw_text("Options - Not Implemented", small_font, WHITE, screen, screen_width / 2, screen_height / 2 + 200)
                         pygame.display.update()
                         pygame.time.wait(2000)
@@ -99,4 +95,4 @@ def main_menu():
 
 # Main execution block
 if __name__ == "__main__":
-    main_menu()  # Display the main menu first
+    main_menu()  

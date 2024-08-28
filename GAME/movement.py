@@ -1,7 +1,7 @@
 import pygame
 
 # Function to handle character movement and rendering
-def move_and_render_character(player, x_pos, y_pos, surface_right, surface_left, surface_jump_right, surface_jump_left, surface_idle_right, surface_idle_left, moving_right, is_jumping, jump_velocity, screen_width, screen_height, screen, index):
+def move_and_render_character(player, x_pos, y_pos, surface_right, surface_left, surface_jump_right, surface_jump_left, surface_idle_right, surface_idle_left, moving_right, is_jumping, jump_velocity, screen_width, screen_height, ground_height, screen, index):
     
     # Inner function to check which player is being controlled
     def get_controls():
@@ -35,12 +35,12 @@ def move_and_render_character(player, x_pos, y_pos, surface_right, surface_left,
         y_pos += jump_velocity  
         jump_velocity += 1 
         if player == 'player2':
-            if y_pos >= screen_height - 120:
-                y_pos = screen_height - 120  
+            if y_pos >= screen_height - ground_height - 135:
+                y_pos = screen_height - ground_height - 135  
                 is_jumping = False 
         else:
-            if y_pos >= screen_height - 100:
-                y_pos = screen_height - 100  
+            if y_pos >= screen_height - ground_height - 100: 
+                y_pos = screen_height - ground_height - 100  
                 is_jumping = False 
 
     if x_pos < 0:
@@ -58,7 +58,7 @@ def move_and_render_character(player, x_pos, y_pos, surface_right, surface_left,
             screen.blit(surface_right[index % len(surface_right)], (x_pos, y_pos))
         else:
             screen.blit(surface_left[index % len(surface_left)], (x_pos, y_pos))
-    else:  # Idle state
+    else:  
       if moving_right:
           screen.blit(surface_idle_right[index % len(surface_idle_right)], (x_pos, y_pos))
       else:
